@@ -3,50 +3,78 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 5%;
-  width: 70%;
-  max-height: 10%;
+  height:10%;
+  box-sizing: border-box;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
-
+.Event{
+  width: 90%;
+  text-align: left;
+  height: 100%;
+  box-sizing: border-box;
 }
 
   .itemDate{
     order: 0;
-    background-color: aqua;
-    height: 100%;
+    text-align:center;
+    flex-grow:5%;
+    float: left;
   }
-      .itemDateDay{
 
-        align-items: center;
-        font-size: 300%;
+      .itemDateDay{
+        box-sizing: border-box;
+        text-align: center;
+        align-items: flex-start;
         order: 0;
+        font-size: 300%;
       }
-      .itemDateMonth{
+      .itemDateDay7{
         font-size: medium;
         order: 0;
-
       }
 
   .itemPicture{
   order: 1;
-  background-color: yellow;
+  background-color: ;
+  width:5%;
+  float: left;
   }
 
   .itemEventinfo{
+    box-sizing: border-box;
     order: 2;
-    background-color: blueviolet;
+    background-color: f8fcfe;
     float: left;
     overflow: none;
     flex: 1 1 auto;
-    padding-left: 2%;
-    padding-right:5%;
+    width:  80%;
   }
-      .itemEventinfoMore{
-        color: aqua;
+      .itemEventinfoMoore{
         order: 2;
+        box-sizing: border-box;
       }
+.Check{
+  flex-grow: 10%;
+}
 
   .itemCheckbox{
   order: 3;
-  align-items: flex-end;
-  background-color: green;
+  align-items: center;
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  transform: scale(3);
   }
+
+
+
+
+
+
+
+
+
